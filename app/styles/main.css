@@ -6,7 +6,24 @@
 }
 
 body {
-  padding: 0;
+  margin:0;
+  padding:0;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  background: #cccccc;
+}
+
+.navbar{
+  margin-bottom:-20px;
+}
+
+.contenuPrincipale{
+  background-color: #fff;
+  margin: 50px 50px 50px 50px; /* 3 valeurs */
+  padding:15px 15px 15px 15px;
+}
+.actuImg{
+  width: 200px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
