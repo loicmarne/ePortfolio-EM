@@ -1,3 +1,28 @@
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,7 +35,11 @@ body {
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
-  background: #cccccc;
+  background-color: white; 
+}
+
+ul{
+  list-style: none;
 }
 
 .navbar{
@@ -18,7 +47,7 @@ body {
 }
 
 .contenuPrincipale{
-  background-color: #fff;
+  background-color: white; 
   margin: 50px 50px 50px 50px; /* 3 valeurs */
   padding:15px 15px 15px 15px;
 }
@@ -74,6 +103,23 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.blockWrite{
+  background-color: #e2e2e2;
+  margin-bottom: 20px;
+  padding : 10px;
+}
+
+.blockSkill{
+  background-color: #e2e2e2;
+}
+
+.blockActu{
+  background-color: #e2e2e2;
+  margin-bottom: 20px;
+  padding : 10px;
+  height: 200px;
 }
 
 /* Responsive: Portrait tablets and up */
