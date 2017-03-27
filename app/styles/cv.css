@@ -1,7 +1,3 @@
-*{
-    font-family: "opensans";
-}
-
 .skill{
     list-style: none;
     margin: 10px;
@@ -13,6 +9,7 @@ h5{
     padding : 0;
     font-weight: bold;
 }
+
 #javaJEE {
     width: 70%;
     padding : 10px;
@@ -86,4 +83,12 @@ h5{
 @keyframes SharePointOffice365 {
    from  {width: 30%;}
     to  {width: 90%;}
+}
+
+.contact{
+    margin-top: 20px;
+}
+
+.TextSkill{
+    padding-top: 10px;
 }

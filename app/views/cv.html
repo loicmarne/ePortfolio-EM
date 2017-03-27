@@ -3,24 +3,32 @@
 
 <h3>En résumé, je suis :</h3>
 <div class="row blockWrite">
-    <div class="col-md-6">
+    <div class="col-md-3" style="text-align: center;">
         <img src="../images/gamer.png" style="width: 100px;height: 100px;" />
         <p>Gamer</p>
     </div>
-    <div class="col-md-6">
-        <img src="../images/livre.png" style="width: 100px;height: 100px;" />
-        <p>Lecteur</p>
+    <div class="col-md-3" style="text-align: center;">
+        <img src="../images/youtube.png" style="width: 100px;height: 100px;" />
+        <p>Fan de youtube</p>
+    </div>
+    <div class="col-md-3" style="text-align: center;">
+        <img src="../images/sebastian.png" style="width: 100px;height: 100px;" />
+        <p>Animovore</p>
+    </div>
+    <div class="col-md-3" style="text-align: center;">
+        <img src="../images/learn.png" style="width: 100px;height: 100px;" />
+        <p>Explorateur de technologie</p>
     </div>
 </div>
 <div>
 
 </div>
 <div class="row">
-    <div class="col-md-6 blockWrite">
+    <div class="col-md-5 blockWrite">
         <div>
-            <button class="accordion">Mes Expériences professionnelles :</button>
+            <button class="accordion">Mes Expériences professionnelles : <img src="../images/+.png" style="height: 20px; width: 20px; float: right"/> </button>
             <div class="panel">
-                <ul>
+                <ul class="TextSkill">
                     <li>
                         <strong>Développeur JAVA/JEE - AngularJS, Banque De France </strong><br>
                         <em>Septembre 2016 - Septembre 2017</em>
@@ -61,9 +69,9 @@
         </div>
 
         <div>
-            <button class="accordion">Ma Formation/Mes études : </button>
+            <button class="accordion">Ma Formation/Mes études : <img src="../images/+.png" style="height: 20px; width: 20px; float: right"/> </button>
             <div class="panel">
-                <ul>
+                <ul class="TextSkill">
                     <li><strong>Licence MIAGE en apprentissage, IUT Paris Descartes</strong><br><em>Septembre 2016 - Septembre 2017</em></li>
                     <li><strong>DUT informatique en apprentissage, IUT Paris Descartes</strong> <br><em>Septembre 2014 - Septembre 2016</em></li>
                     <li><strong>Formation SharePoint 2013 Administrateur, Banque De France</strong> <br><em>Novembre 2015</em></li>
@@ -73,9 +81,9 @@
         </div>
 
         <div>
-            <button class="accordion">Ce que j'aime aussi :</button>
+            <button class="accordion">Ce que j'aime aussi : <img src="../images/+.png" style="height: 20px; width: 20px; float: right"/> </button>
             <div class="panel">
-                <ul>
+                <ul class="TextSkill">                   
                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Tir sportif</li>
                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Système embarqué</li>
                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Entreprenariat</li>
@@ -83,7 +91,8 @@
             </div>
         </div>
     </div>
-
+    <div class="col-md-1">
+    </div>
     <div class="col-md-6 blockSkill">
         <h3>Mes compétences</h3>
         <ul>
@@ -105,7 +114,7 @@
     </div>
 </div>
 
-<div class="blockWrite">
+<div class="row blockWrite contact">
     <h3>Me contacter : </h3>
     <ul>
         <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> motaraetiennepro@gmail.com</li>
@@ -122,23 +131,23 @@
             /* Toggle between adding and removing the "active" class,
             to highlight the button that controls the panel */
             this.classList.toggle("active");
-            
             var panel = this.nextElementSibling;
             if (panel.style.display === "none") {
-                panel.style.display = "none";
-            } else {
                 panel.style.display = "block";
+            } else {
+                panel.style.display = "none";
             }
 
             /* Toggle between hiding and showing the active panel */
             for (j = 0; j < acc.length; j++) {
                 var display = acc[j].nextElementSibling.style.display;
-                if(display === "none"){
-                    display = block;    
-                }else{
+                if (display === "none") {
+                    display = block;
+                } else {
                     display = "none";
                 }
             }
         }
     }
+
 </script>
